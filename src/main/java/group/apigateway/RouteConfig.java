@@ -13,11 +13,11 @@ public class RouteConfig {
 
         return builder.routes()
                 .route("product", r -> r.path("/products/**")
-                        .uri("http://localhost:8083"))
+                        .uri("http://3.39.43.179:8083"))
                 .route("user", r -> r.path("/users/**")
-                        .uri("http://localhost:8081"))
+                        .uri("http://15.165.174.43:8081"))
                 .route("user", r -> r.path("/order/**")
-                        .uri("http://localhost:8082"))
+                        .uri("http://43.203.122.102:8082"))
                 .build();
     }
 }
