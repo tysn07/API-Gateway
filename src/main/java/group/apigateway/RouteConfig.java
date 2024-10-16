@@ -18,6 +18,8 @@ public class RouteConfig {
                         .uri("http://15.165.174.43:8081"))
                 .route("user", r -> r.path("/order/**")
                         .uri("http://15.165.174.43:8082"))
+                .route("user", r -> r.path("/payment/**")
+                        .uri("http://3.39.43.179:8084"))
                 .build();
     }
 }
